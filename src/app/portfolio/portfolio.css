@@ -1,0 +1,45 @@
+.project-card {
+  background-color: #1e293b;
+  color: white;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4); /* Cyan glow */
+  border: 2px solid #38bdf8; /* Highlight */
+}
+
+
+.card-title span:last-child {
+  font-weight: bold;
+}
+
+.btn-primary {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.7);
+}
+
+.type-class {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 8px;
+  color: green; 
+}
+
+.title-class {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.desc-class {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}

@@ -1,0 +1,80 @@
+<h2 class="mb-4">My Project Portfolio - APPDEV</h2>
+
+<!-- PRELIMS -->
+<h4 class="mt-4">📘 Prelims</h4>
+<div class="row g-3">
+  <div class="col-md-4" *ngFor="let p of prelims">
+    <div class="card project-card h-100 shadow-sm p-3">
+
+      <h5 class="card-title d-flex justify-content-between">
+        <span class="type-class" [ngClass]="{ 'text-danger': p.missing }">{{ p.type }}</span>
+        <span class="score-class" [ngClass]="{ 'text-danger': p.missing }">{{ p.score }}</span>
+      </h5>
+
+      <p class="title-class mb-1" [ngClass]="{ 'text-danger': p.missing }">{{ p.title }}</p>
+      <p class="card-text desc-class" [ngClass]="{ 'text-danger': p.missing }">{{ p.desc }}</p>
+
+      <a *ngIf="!p.missing"
+         [href]="p.link"
+         target="_blank"
+         class="btn btn-primary btn-sm mt-auto"
+         [ngClass]="{ 'text-danger': p.missing }">
+         Open
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MIDTERMS -->
+<h4 class="mt-5">📗 Midterms</h4>
+<div class="row g-3">
+  <div class="col-md-4" *ngFor="let m of midterms">
+    <div class="card project-card h-100 shadow-sm p-3">
+
+      <h5 class="card-title d-flex justify-content-between" [ngClass]="{ 'text-danger': m.missing }">
+        <span class="type-class">{{ m.type }}</span>
+        <span>{{ m.score }}</span>
+      </h5>
+
+      <p class="title-class mb-1">{{ m.title }}</p>
+      <p class="card-text desc-class" [ngClass]="{ 'text-danger': m.missing }">{{ m.desc }}</p>
+
+      <a *ngIf="!m.missing"
+         [href]="m.link"
+         target="_blank"
+         class="btn btn-primary btn-sm mt-auto">
+         Open
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- FINALS -->
+<h4 class="mt-5">📙 Finals</h4>
+<div class="row g-3">
+  <div class="col-md-4" *ngFor="let f of finals">
+    <div class="card project-card h-100 shadow-sm p-3">
+
+      <h5 class="card-title d-flex justify-content-between" [ngClass]="{ 'text-danger': f.missing }">
+        <span class="type-class">{{ f.type }}</span>
+        <span>{{ f.score }}</span>
+      </h5>
+
+      <p class="title-class mb-1">{{ f.title }}</p>
+      <p class="card-text desc-class" [ngClass]="{ 'text-danger': f.missing }">{{ f.desc }}</p>
+
+      <a *ngIf="!f.missing"
+         [href]="f.link"
+         target="_blank"
+         class="btn btn-primary btn-sm mt-auto">
+         Open
+      </a>
+
+    </div>
+  </div>
+</div>
