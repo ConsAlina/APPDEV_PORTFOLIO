@@ -121,6 +121,13 @@ export class Portfolio {
       score: '15/30', 
       missing: false 
     },
+    { 
+      type: 'Group Exam', 
+      title: 'Firebase: Physical Fitness App', 
+      desc: 'A physical fitness application built with Firebase to manage and present user fitness data.', 
+      link: 'https://izzabellefolio.github.io/fitracker/',  
+      missing: false
+    }
   ];
 
 }
